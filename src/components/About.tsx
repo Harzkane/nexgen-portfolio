@@ -1,7 +1,7 @@
 const highlights = [
   {
     value: "2025",
-    label: "Founded in Lagos with a product-first operating model",
+    label: "Founded in Abuja with a product-first operating model",
   },
   {
     value: "13",
