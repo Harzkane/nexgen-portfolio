@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const navLinks = [
   { name: "About", href: "#about" },
@@ -13,6 +15,12 @@ const navLinks = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+
+  const getHref = (href: string) => {
+    return isHome ? href : `/${href}`;
+  };
 
   return (
     <motion.nav
@@ -22,26 +30,26 @@ export default function Navbar() {
       className="fixed inset-x-0 top-0 z-50 px-4 pt-4 sm:px-6"
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/10 bg-black/35 px-5 py-3 text-sm backdrop-blur-xl shadow-[0_12px_40px_rgba(0,0,0,0.28)] sm:px-7">
-        <a href="#hero" className="font-display text-lg font-bold tracking-[0.22em] text-white">
+        <Link href={getHref("#hero")} className="font-display text-lg font-bold tracking-[0.22em] text-white">
           NEXGEN
-        </a>
+        </Link>
 
         <ul className="hidden items-center gap-6 text-white/70 md:flex">
           {navLinks.map((link) => (
             <li key={link.name}>
-              <a href={link.href} className="hover:text-white">
+              <Link href={getHref(link.href)} className="hover:text-white">
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
 
-        <a
-          href="#contact"
+        <Link
+          href={getHref("#contact")}
           className="hidden rounded-full border border-[#d7ff64]/40 bg-[#d7ff64]/12 px-4 py-2 font-semibold text-[#f5ffc7] md:inline-flex"
         >
           Start a project
-        </a>
+        </Link>
 
         <button
           className="rounded-full border border-white/10 px-4 py-2 text-white md:hidden"
@@ -63,22 +71,22 @@ export default function Navbar() {
           >
             <div className="flex flex-col gap-3">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.name}
-                  href={link.href}
+                  href={getHref(link.href)}
                   className="rounded-2xl border border-white/6 px-4 py-3 text-white/80 hover:bg-white/5 hover:text-white"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
-              <a
-                href="#contact"
+              <Link
+                href={getHref("#contact")}
                 className="rounded-2xl bg-[#d7ff64] px-4 py-3 font-semibold text-[#0b0f12]"
                 onClick={() => setIsOpen(false)}
               >
                 Start a project
-              </a>
+              </Link>
             </div>
           </motion.div>
         )}
