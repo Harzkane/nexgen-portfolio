@@ -1,6 +1,6 @@
 "use client";
 
-const CONTACT_EMAIL = "codewithharz@gmail.com";
+const CONTACT_EMAIL = "hello@nexgentech.dev";
 const CONTACT_PHONE = "+2348107060160";
 const CONTACT_NAME = "Haruna Bah Jibril";
 
