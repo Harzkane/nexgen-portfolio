@@ -1,14 +1,24 @@
 const techs = [
   "Next.js",
   "React",
+  "Vue.js",
+  "React Native",
   "TypeScript",
   "Node.js",
-  "MongoDB",
+  "Go",
+  "Flask",
   "PostgreSQL",
+  "MongoDB",
+  "Redis",
+  "Prisma",
+  "Express",
   "Docker",
+  "Kubernetes",
+  "Polygon",
   "Tailwind CSS",
   "WebSockets",
   "Payment APIs",
+  "OpenTelemetry",
 ];
 
 export default function TechStack() {

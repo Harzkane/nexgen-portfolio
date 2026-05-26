@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 const proofPoints = [
-  "13 repo-backed products across fintech, commerce, logistics, hospitality, and operations",
+  "14 repo-backed products across fintech, commerce, logistics, hospitality, and operations",
   "Case studies grounded in real systems, not speculative redesigns",
   "Product thinking, design, engineering, and delivery in one team",
 ];

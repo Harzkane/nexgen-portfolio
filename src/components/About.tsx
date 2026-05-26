@@ -4,7 +4,7 @@ const highlights = [
     label: "Founded in Abuja with a product-first operating model",
   },
   {
-    value: "13",
+    value: "14",
     label: "Repo-backed products across fintech, commerce, logistics, hospitality, and ops",
   },
   {

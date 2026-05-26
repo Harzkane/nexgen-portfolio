@@ -33,6 +33,20 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: "AfriRail Core",
+    image: "",
+    description:
+      "Production-grade, multi-region payment infrastructure engine for Pan-African financial rails. Integrates multi-region PostgreSQL databases, dual-layer idempotency, KYC/AML gates, and ISO 20022 Go connectors.",
+    tags: ["TypeScript", "Go", "PostgreSQL", "Redis"],
+    category: "Infrastructure",
+    featured: true,
+    gradient: "from-[#7dd3fc] via-[#0284c7] to-[#0369a1]",
+    stat: "Multi-region rails",
+    proof: "Pan-African payment engine and ISO 20022 Go connector",
+    url: "",
+    caseStudyPath: "/work/afrirail-core",
+  },
+  {
     name: "Bruthol",
     image: "",
     description:

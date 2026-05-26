@@ -1,5 +1,5 @@
 const metrics = [
-  { value: "13", label: "Products launched or showcased" },
+  { value: "14", label: "Products launched or showcased" },
   { value: "9", label: "Core sectors now represented across the portfolio" },
   { value: "2025", label: "Year the company was established" },
   { value: "End-to-end", label: "Strategy, design, engineering, and delivery" },

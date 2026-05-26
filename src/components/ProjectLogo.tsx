@@ -144,6 +144,16 @@ export default function ProjectLogo({ name, className = "" }: ProjectLogoProps) 
                 </svg>
             );
 
+        case "AfriRail Core":
+            return (
+                <svg viewBox="0 0 250 80" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="20" y="18" width="46" height="44" rx="12" fill="#0284c7" opacity="0.14" />
+                    <path d="M28 32H58M28 48H58M38 32V48M48 32V48" stroke="#0284c7" strokeWidth="4.5" strokeLinecap="round" strokeLinejoin="round" />
+                    <text x="78" y="52" className={textStyle} fontSize="28" fill="currentColor">Afri</text>
+                    <text x="136" y="52" className={textStyle} fontSize="28" fill="#0284c7">Rail</text>
+                </svg>
+            );
+
         default:
             return null;
     }
