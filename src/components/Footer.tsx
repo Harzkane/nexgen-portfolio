@@ -48,8 +48,18 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-white/8 pt-6 text-sm text-white/38">
-          &copy; {new Date().getFullYear()} NEXGEN TECH INNOVATIONS LIMITED
+        <div className="mt-8 border-t border-white/8 pt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between text-sm text-white/38">
+          <div>
+            &copy; {new Date().getFullYear()} NEXGEN TECH INNOVATIONS LIMITED
+          </div>
+          <div className="flex gap-6">
+            <a href="/privacy" className="hover:text-white transition-colors">
+              Privacy Policy
+            </a>
+            <a href="/terms" className="hover:text-white transition-colors">
+              Terms of Service
+            </a>
+          </div>
         </div>
       </div>
     </footer>
