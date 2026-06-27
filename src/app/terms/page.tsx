@@ -120,12 +120,35 @@ export default function TermsOfService() {
           <section>
             <h2 className="font-display text-xl font-bold text-white">6. Contact Us</h2>
             <p className="mt-3">
-              If you have any questions, concerns, or disputes regarding these Terms, please contact us at:
+              If you have any questions, concerns, or disputes regarding these Terms, please contact the appropriate department:
             </p>
+            <div className="mt-4 space-y-3">
+              {[
+                { label: "General Support", email: "support@nexgentech.dev", note: "General questions, account issues, dispute follow-ups" },
+                { label: "Legal & Compliance", email: "legal@nexgentech.dev", note: "Legal inquiries, regulatory compliance, formal disputes" },
+                { label: "Billing", email: "billing@nexgentech.dev", note: "Fee disputes, billing reconciliation" },
+                { label: "Security", email: "security@nexgentech.dev", note: "Reporting fraud or suspicious activity" },
+                { label: "Partnerships", email: "partnerships@nexgentech.dev", note: "Merchant partnerships and platform integrations" },
+                { label: "Press & Media", email: "press@nexgentech.dev", note: "Media coverage and press inquiries" },
+              ].map((item) => (
+                <a
+                  key={item.email}
+                  href={`mailto:${item.email}`}
+                  className="flex items-start justify-between rounded-2xl border border-white/5 bg-white/3 px-5 py-4 hover:border-[#d7ff64]/20 hover:bg-[#d7ff64]/5 transition-colors"
+                >
+                  <div>
+                    <p className="text-xs uppercase tracking-widest text-white/38">{item.label}</p>
+                    <p className="mt-1 font-semibold text-[#d7ff64]">{item.email}</p>
+                    <p className="mt-1 text-xs text-white/50">{item.note}</p>
+                  </div>
+                </a>
+              ))}
+            </div>
             <div className="mt-4 rounded-2xl border border-white/5 bg-white/3 p-5">
-              <p><strong>Developer:</strong> NexGen Tech Innovations</p>
-              <p><strong>Email:</strong> support@nexgentech.dev</p>
-              <p><strong>Website:</strong> https://nexgentech.dev</p>
+              <p><strong>Company:</strong> NexGen Tech Innovations</p>
+              <p><strong>Website:</strong>{" "}
+                <a href="https://nexgentech.dev" className="text-[#d7ff64] hover:underline">nexgentech.dev</a>
+              </p>
             </div>
           </section>
         </div>

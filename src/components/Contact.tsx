@@ -1,8 +1,7 @@
 "use client";
 
-const CONTACT_EMAIL = "hello@nexgentech.dev";
-const CONTACT_PHONE = "+2348107060160";
 const CONTACT_NAME = "Haruna Bah Jibril";
+const CONTACT_PHONE = "+2348107060160";
 
 export default function Contact() {
   return (
@@ -29,23 +28,6 @@ export default function Contact() {
               Tight communication and execution without unnecessary layers
             </div>
           </div>
-
-          {/* <div className="mt-10 grid gap-4 text-sm text-white/76">
-            <a
-              href={`mailto:${CONTACT_EMAIL}`}
-              className="rounded-2xl border border-white/8 bg-[#d7ff64]/8 px-4 py-4 transition-colors hover:border-[#d7ff64]/25 hover:bg-[#d7ff64]/12"
-            >
-              <p className="text-xs uppercase tracking-[0.18em] text-white/42">Email</p>
-              <p className="mt-2 font-semibold text-white">{CONTACT_EMAIL}</p>
-            </a>
-            <a
-              href={`tel:${CONTACT_PHONE}`}
-              className="rounded-2xl border border-white/8 bg-black/18 px-4 py-4 transition-colors hover:border-white/14 hover:bg-white/[0.04]"
-            >
-              <p className="text-xs uppercase tracking-[0.18em] text-white/42">Call Haruna Bah Jibril</p>
-              <p className="mt-2 font-semibold text-white">{CONTACT_PHONE}</p>
-            </a>
-          </div> */}
         </div>
 
         <div className="rounded-[34px] border border-white/8 bg-[#12181d] p-8 lg:p-10">
@@ -60,15 +42,28 @@ export default function Contact() {
 
           <div className="mt-10 grid gap-4">
             <a
-              href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Project inquiry from portfolio")}`}
+              href={`mailto:support@nexgentech.dev?subject=${encodeURIComponent("Project inquiry from portfolio")}`}
               className="rounded-[28px] border border-[#d7ff64]/20 bg-[#d7ff64]/8 p-6 transition-colors hover:border-[#d7ff64]/35 hover:bg-[#d7ff64]/12"
             >
-              <p className="text-xs uppercase tracking-[0.18em] text-white/42">Email Haruna Bah Jibril</p>
+              <p className="text-xs uppercase tracking-[0.18em] text-white/42">General & Support</p>
               <p className="mt-3 text-2xl font-semibold tracking-[-0.03em] text-white">
-                {CONTACT_EMAIL}
+                support@nexgentech.dev
               </p>
               <p className="mt-3 text-sm leading-7 text-white/58">
-                Best for project briefs, product strategy conversations, and partnership discussions.
+                Best for project briefs, product strategy conversations, and support requests.
+              </p>
+            </a>
+
+            <a
+              href="mailto:partnerships@nexgentech.dev"
+              className="rounded-[28px] border border-[#7df9c6]/15 bg-[#7df9c6]/5 p-6 transition-colors hover:border-[#7df9c6]/28 hover:bg-[#7df9c6]/8"
+            >
+              <p className="text-xs uppercase tracking-[0.18em] text-white/42">Partnerships & Business</p>
+              <p className="mt-3 text-2xl font-semibold tracking-[-0.03em] text-white">
+                partnerships@nexgentech.dev
+              </p>
+              <p className="mt-3 text-sm leading-7 text-white/58">
+                For business partnerships, merchant integrations, and commercial discussions.
               </p>
             </a>
 
@@ -90,3 +85,4 @@ export default function Contact() {
     </section>
   );
 }
+

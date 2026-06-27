@@ -5,7 +5,8 @@ const links = [
 ];
 
 const contactLinks = [
-  { label: "Email", href: "mailto:hello@nexgentech.dev", value: "hello@nexgentech.dev" },
+  { label: "Support", href: "mailto:support@nexgentech.dev", value: "support@nexgentech.dev" },
+  { label: "Press", href: "mailto:press@nexgentech.dev", value: "press@nexgentech.dev" },
   { label: "Call", href: "tel:+2348107060160", value: "+2348107060160" },
 ];
 
